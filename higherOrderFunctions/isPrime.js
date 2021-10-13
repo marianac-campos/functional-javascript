@@ -6,33 +6,16 @@ var carrinho = [
   {"name":"Monitor", "type":"prime", "category":"tech", "price": 119.99},
   {"name":"Mouse", "type":"prime", "category":"tech", "price": 25.50},
   {"name":"dress", "type":"regular", "category":"clothes", "price": 49.90},
-];
+]
 
 function primeItems(carrinho){
   items = carrinho.type;
   return items === 'prime';
-};
+}
 
-const isPrime = carrinho.filter(primeItems);
-console.log(isPrime);
+function isPrime(){
+  // reject?
+}
 
-//LAMBDA FUNCTION
-// const primeItems = (carrinho) => {items = carrinho.type; items === 'prime';} ?
-
-/*
-function isPrime(x){
-x = carrinho.type;
-
-if(x === 'prime'){
-  return true;
-} else {
-  return false;
-};
-};
-*/
-
-/*
-function primeItems(carrinho){
-carrinho.filter(isPrime());
-};
-*/
+const prime = carrinho.filter(primeItems);
+console.log(prime);

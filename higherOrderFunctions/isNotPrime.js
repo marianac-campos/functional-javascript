@@ -5,4 +5,4 @@ const isPrime = require('./isPrime.js');
 
 function notPrimeItems(carrinho){
   // ... 
-};
+}

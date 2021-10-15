@@ -1,0 +1,22 @@
+{
+  "name": "desafio1",
+  "version": "1.0.0",
+  "description": "desafio",
+  "main": "pureFunction.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianac-campos/functional-javascript.git"
+  },
+  "author": "marianacampos",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/marianac-campos/functional-javascript/issues"
+  },
+  "homepage": "https://github.com/marianac-campos/functional-javascript#readme",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  }
+}

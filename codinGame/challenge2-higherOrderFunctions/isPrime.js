@@ -1,7 +1,4 @@
-//filter is a method of arrays - return a boolean
-// returns a new array with only the elements for which return true 
-
-var cart = [
+const cart = [
   {"name":"Biscuits", "type":"regular", "category":"food", "price": 2.0},
   {"name":"Monitor", "type":"prime", "category":"tech", "price": 119.99},
   {"name":"Mouse", "type":"prime", "category":"tech", "price": 25.50},
@@ -9,16 +6,17 @@ var cart = [
 ]
 
 function primeItems(cart){
-  
+  const type = cart.type;
+  return type === 'prime';
 }
 
+/*
 function isPrime(item){
   if(item === 'prime') {
     return true;
-  } else {
-    return false;
   }
 }
+*/
 
 const prime = cart.filter(primeItems);
 console.log(prime);

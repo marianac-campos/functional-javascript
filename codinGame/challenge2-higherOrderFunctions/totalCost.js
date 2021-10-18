@@ -1,15 +1,14 @@
-var cart = [
-    {"name":"Biscuits", "type":"regular", "category":"food", "price": 2.0},
-    {"name":"Monitor", "type":"prime", "category":"tech", "price": 119.99},
-    {"name":"Mouse", "type":"prime", "category":"tech", "price": 25.50},
-    {"name":"dress", "type":"regular", "category":"clothes", "price": 49.90},
+const cart = [
+    { name:"Biscuits", type:"regular", category:"food", price: 2.0 },
+    { name:"Monitor", type:"prime", category:"tech", price: 119.99 },
+    { name:"Mouse", type:"prime", category:"tech", price: 25.50 },
+    { name:"dress", type:"regular", category:"clothes", price: 49.90 }
 ]
 
 function totalCost(total, cart){
-    const getPrice = cart.price;
-    return total += getPrice;
+    return total + cart.price;
 }
 
-const total = cart.reduce(totalCost);
+const finalValue = cart.reduce(totalCost);
 
-console.log(total);
+console.log(finalValue);

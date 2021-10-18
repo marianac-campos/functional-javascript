@@ -6,11 +6,12 @@ var cart = [
   ]
   
   function applyCoupon(cart) {
-     if(cart.category == 'tech') {
-          return cart.price-(cart.price*0.2);
-      } else {
-          return cart.price;
-      }
+    return cart.map(function (el) {
+    if (el.category == "tech") {
+    return el.price * 0.8;
+    }
+    return el.price;
+    })
   }
   
   const desconto = cart

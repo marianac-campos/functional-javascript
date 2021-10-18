@@ -10,6 +10,6 @@ function totalCost(total, cart){
     return total += getPrice;
 }
 
-let total = cart.reduce(totalCost);
+const total = cart.reduce(totalCost);
 
 console.log(total);

@@ -5,14 +5,15 @@ const cart = [
     {"name":"dress", "type":"regular", "category":"clothes", "price": 49.90},
   ]
   
-  function applyCoupon(cart){
-    if(cart.category == 'tech'){
-      return cart.price-(cart.price*0.2);
-     } else {
-         return `(N/A) ${cart.price}`;
-     }
+  function applyCoupon(cart){ 
+    return cart.map( (item) => {
+      if(item.category === 'tech') {
+        item.price -= (item.price*0.2);
+        return item;
+      } else {
+        return item;
+      }
+    });
  }
- 
- const desconto = cart.map(applyCoupon);
 
-console.log(desconto);
+ console.log(applyCoupon(cart));

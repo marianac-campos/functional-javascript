@@ -5,18 +5,10 @@ const cart = [
   {"name":"dress", "type":"regular", "category":"clothes", "price": 49.90},
 ]
 
-function primeItems(cart){
-  const type = cart.type;
-  return type === 'prime';
-}
-
-/*
 function isPrime(item){
-  if(item === 'prime') {
-    return true;
-  }
+  return item.type === 'prime';
 }
-*/
 
-const prime = cart.filter(primeItems);
-console.log(prime);
+function primeItems(cart){
+  return cart.filter(isPrime);
+}

@@ -1,4 +1,4 @@
-[
+const list = [
     { "id": "Grandad", "parent": null },
     { "id": "Dad", "parent": "Grandad" },
     { "id": "You", "parent": "Dad" },
@@ -13,14 +13,15 @@
 ]
 
 const buildTree = (list, parent) => {
-    var node = {}
-        list.filter(x => x.parent === parent)
-        list.forEach(x => {
-                node[x.id] = buildTree(list, x.id)
+    console.log(parent);
+    var node = {};
+        list
+            .filter(x => x.parent === parent)
+            .forEach(x => {
+                console.log(parent, x.id);    
+                node[x.id] = buildTree(list, x.id);
             })
-        
-        console.log(node);
         return node;
 }
 
-console.log(buildTree());
+console.log(buildTree(list, null));
